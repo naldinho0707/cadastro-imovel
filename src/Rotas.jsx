@@ -1,10 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from "./pages/Home";
-import Cadastro from './pages/Cadastro';
-// import Sobre from "./pages/Sobre";
-import Lista from './pages/Lista';
-// import Contato from "./pages/Contato";
+import Home from "../src/pages/Home";
+import Cadastro from '../src/pages/Cadastro';
+import Lista from '../src/pages/Lista';
 
 function Rotas(){
   return (

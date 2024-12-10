@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from "../src/pages/Home";
-import Cadastro from '../src/pages/Cadastro';
-import Lista from '../src/pages/Lista';
+import Home from "../src/pages/Home.jsx";
+import Cadastro from '../src/pages/Cadastro.jsx';
+import Lista from '../src/pages/Lista.jsx';
 
 function Rotas(){
   return (

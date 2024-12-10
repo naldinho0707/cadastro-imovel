@@ -318,7 +318,7 @@ footer{
 
 /* body da página de lista dos imóveis */
 .body-lista{
-    height: 250vh; 
+    height: auto; 
     display: flex;
     flex-direction: column;
     justify-content:space-between;

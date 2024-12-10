@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family:'Jura', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 62,5%;
+}
+
+/* body da página home */
+.body-home{
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+
+/* ==========  HEADER ========== */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    border-bottom: 5px solid #5633D0;
+}
+
+header nav ul{
+    display: flex;
+    column-gap: 30px;
+}
+
+header nav ul li, a{
+    color: #5633D0;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+}
+
+header nav ul li a:hover{
+    color: #6EC1E4;
+    border-bottom: 4px solid #6EC1E4;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+header nav img{
+    border: 2px solid #5633D0;
+    border-radius: 200px;
+    width: 60px;
+}
+
+
+/* Classe home da Lista de navegação da página home */
+.home{
+    color: #6EC1E4;
+    border-bottom: 4px solid #6EC1E4;
+}
+
+/* Classe cadastro da Lista de navegação da página Cadastro de Imóvel */
+.cadastro{
+    color: #6EC1E4;
+    border-bottom: 4px solid #6EC1E4;
+}
+
+/* Classe lista da Lista de navegação da página Lista de Imóvel */
+.lista{
+    color: #6EC1E4;
+    border-bottom: 4px solid #6EC1E4;
+}
+
+header img{
+    max-width: 100px;
+}
+
+
+/* ==========  MAIN ========== */
+
+main{
+ height: 100%; 
+ display: flex;
+ flex-direction: column;
+ align-items: start;
+}
+
+/* Classe usuario, para configuração do nome do usuário nas páginas */
+.usuario{
+    padding: 10px 0 25px 25px;
+    font-size: 0.9rem;
+}
+
+main img{
+    width: 100px;
+}
+
+/* Classe conteúdo, para configuração da section do conteúdo do main da página Home */
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 18px;
+    width: 100%;
+}
+
+.conteudo p{
+    color: black;
+    font-weight: bold;
+}
+.conteudo a{
+    color: #7B2CBF;
+    padding: 10px;
+    border: 2px solid #7B2CBF;
+    border-radius: 10px;
+}
+
+.conteudo a:hover{
+    background-color: #7B2CBF ;
+    color: white;
+    padding: 10px;
+    border: 2px solid #7B2CBF;
+    border-radius: 10px;
+}
+
+.botao{
+ margin: 10px 0 20px 0;
+}
+
+.flats{
+    font-size: 0.9rem;
+    background-color: #7B2CBF ;
+    color: white;
+    padding: 10px;
+    border: 2px solid #7B2CBF;
+    border-radius: 10px;
+    margin: 0 25px;
+}
+
+.flats:hover{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 2px solid #7B2CBF;
+    border-radius: 10px;
+}
+
+.indisponivel{
+    font-size: 0.9rem;
+    color: black;
+    padding: 10px;
+    border: 3px solid #D6D6D6;
+    border-radius: 10px;
+}
+
+
+
+
+/* ==========  FOOTER ========== */
+footer{
+    color: white;
+    font-size: 0.9rem;    
+    height: 80px;
+    background-color: #0E0041;
+    justify-self: flex-end;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+
+
+/* ==========  Cadastro ========== */
+
+/* body da página de cadastro */
+.cadastro-imovel{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+/* Main da Página Cadastro */
+.main-cadastro{
+    display: flex;
+}
+
+.cadastro-imovel h1{
+    font-size: 1.2rem;
+    padding: 10px 0 25px 25px;
+}
+
+.cadastro-imovel main img{
+    width: 35px;
+    padding-left: 25px;
+}
+
+/* Classe Formulario pa a section do Arquivo Formulario.jsx */
+.formulario{
+    align-self: center;
+    font-size: 1.5rem;
+    padding: 0 25px;
+}
+
+.formulario p{
+    max-width: 500px;
+}
+
+.formulario form{
+    padding: 15px 0;
+    /* border: 3px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 500px;
+}
+
+.formulario form label{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.formulario form input{
+    height: 40px;
+    padding-left: 10px;
+    font-size:  1.2rem;
+    color: black;
+    border: 3px solid #D6D6D6;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.formulario form input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+.formulario form textarea{
+    padding: 10px 0 0 10px;
+    font-size:  1.2rem;
+    border: 3px solid #D6D6D6;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.formulario form textarea::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+.contador-falso{
+    text-align: end;
+    color: black;
+    font-weight: 500;
+}
+
+.numero-complemento{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    column-gap: 15px;
+}
+
+.numero-complemento input{
+    flex: 1;
+}
+
+.formulario form select{
+    padding-left: 10px;
+    font-size:  1.2rem;
+    color: black;
+    font-weight: bold;
+    border: 3px solid #D6D6D6;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cidade-uf{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+}
+
+.cidade-uf input{
+    flex: 0.7;
+}
+
+.cidade-uf select{
+    flex: 0.3;
+}
+
+
+.btn-formulario{
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #7B2CBF ;
+    color: white;
+    padding: 10px;
+    border: 2px solid #7B2CBF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-formulario:hover{
+    background-color: white;
+    color: black;
+}
+
+/* ==========  Lista ========== */
+
+/* body da página de lista dos imóveis */
+.body-lista{
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.body-lista main{
+    display: flex;
+    flex-direction: column;
+}
+
+.body-lista main h1{
+    padding-left: 25px;
+}
+
+.body-lista main .seta-lista{
+    width: 35px;
+    padding: 10px 0 0 25px;
+}
+
+.body-lista main .section-main-lista{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 10px 0;
+}
+
+/* Classe exibe-imovel pertence ao <asside> no main no arquivo ConteudoLista.jsx*/
+.exibe-imovel{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.exibe-imovel img{
+    flex-basis: 100%;
+    height: 225px;
+    border-radius: 20px;
+    border: 1px solid #D6D6D6;
+}
+
+.nome-nota p:nth-child(2)::before{
+    color: #7B2CBF;
+    content: "\2605";
+    font-size: 1.3rem;
+}
+
+.nome-nota{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.cidade-valor{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px;
+    font-size: 0.9rem;
+}
+
+
+/* ==========  RESPONSIVO ========== */
+
+@media screen and (max-width:700px) {
+
+    /* main{
+        background-color: yellow;
+    } */
+
+    header nav img{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+
+    header nav ul li, a{
+        font-size: 0.8rem;
+    }
+
+    header nav ul li{
+      margin: 10px;
+      text-align: center;
+    }
+
+    header img{
+      display: none;
+    }
+
+    .conteudo p{
+        font-size: 0.65rem;
+        text-align: center;
+    }
+    
+}
